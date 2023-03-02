@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rensposive gallery</title>
+<style>
+
+body {
+    max-width: 960px;
+    margin: 0 auto;
+}
+#conteiner {
+    max-width: 960px;
+    min-width: 180px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(144px, 1fr));
+    row-gap: 3.5em;
+    column-gap: 0.5em;
+}
+h1 {
+    margin: 50px 30px 50px 30px;
+}
+
+p {
+    max-width: 960px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px;
+    
+    border: black solid 1px;
+}
+.image {
+    height: 155px;
+    background-color: rgb(58, 139, 177);
+    border-radius: 1em;
+    justify-self: center;
+    min-width: 60%;
+    max-width: 160px;
+}
+
+    @media screen and (max-width: 1024px) {
+        #conteiner {
+        grid-template-columns: repeat(4, 1fr);}
+        }
+    @media screen and (max-width: 768px) {
+        #conteiner {
+        grid-template-columns: repeat(3, 1fr);}
+        }
+    @media screen and (max-width: 630px) {
+        #conteiner {
+        grid-template-columns: repeat(2, 1fr);}
+        }
+    @media screen and (max-width: 414px) {
+        #conteiner {
+        grid-template-columns: repeat(1, 1fr);}
+        .image {
+        max-width: 155px;}
+        h1 {
+        margin: 30px 0px 30px 0px;
+        text-align: center;
+         }
+        }
+img {
+    width: 100%;
+    margin: auto;
+    }
+.image_title {
+    vertical-align: bottom;
+    background-color: rgb(237, 246, 252);
+    text-align: center;
+    padding: 15px;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    }
+</style>
+
+</head>
+
+<body>
+    <h1>Gallery heading</h1>
+    <div id=conteiner>
+        <div id="image1" class=image>
+            <img src="placeholder-image.png" alt="">
+            <div class="image_title">image title</div>
+        </div>
+        <div id="image2" class=image>
+            <img src="placeholder-image.png" alt="">
+            <div class="image_title">image title</div>
+        </div>
+        <div id="image3" class=image>
+            <img src="placeholder-image.png" alt="">
+            <div class="image_title">image title</div>
+        </div>
+        <div id="image4" class=image>
+            <img src="placeholder-image.png" alt="">
+            <div class="image_title">image title</div>
+        </div>
+        <div id="image5" class=image>
+            <img src="placeholder-image.png" alt="">
+            <div class="image_title">image title</div>
+        </div>
+        <div id="image6" class=image>
+            <img src="placeholder-image.png" alt="">
+            <div class="image_title">image title</div>
+        </div>
+        <div id="image7" class=image>
+            <img src="placeholder-image.png" alt="">
+            <div class="image_title">image title</div>
+        </div>
+        <div id="image8" class=image>
+            <img src="placeholder-image.png" alt="">
+            <div class="image_title">image title</div>
+        </div>
+        <div id="image9" class=image>
+            <img src="placeholder-image.png" alt="">
+            <div class="image_title">image title</div>
+        </div>
+        <div id="image10" class=image>
+            <img src="placeholder-image.png" alt="">
+            <div class="image_title">image title</div>
+        </div>
+
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa impedit fuga rem tenetur omnis recusandae architecto ipsam! Laborum, ratione expedita deserunt est impedit necessitatibus sit eius porro natus at! Incidunt!</p>
+    
+</body>
+</html>
